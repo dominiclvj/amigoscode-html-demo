@@ -14,6 +14,18 @@
       "dir": "html-fundamentals",
       "exercises": [
         {
+          "name": "HTML Introduction",
+          "dir": "html_introduction",
+          "initialFiles": ["index.html"],
+          "tests": [],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
           "name": "What Are Tags?",
           "dir": "what_are_tags",
           "initialFiles": ["index.html"],
@@ -21,12 +33,12 @@
             {
               "test": "",
               "name": "Add <title> Tag Content",
-              "description:": "Add content to the <title> tag so that it reads 'Amigoscode'"
+              "description:": "Add content to the <title> tag so that it reads 'Amigoscode'."
             },
             {
               "test": "",
               "name": "Write your name inside a <h1> tag",
-              "description:": "Add your first heading in the body of the HTML file by writing your name between an open and closed h1 tag"
+              "description:": "Add your first heading in the body of the HTML file by writing your name between an open and closed h1 tag."
             }
           ],
           "scripts": [
@@ -44,7 +56,7 @@
             {
               "test": "",
               "name": "Add a link to the Amigoscode website",
-              "description:": "Use the <a> tag to add a link to the Amigoscode website (https://www.amigoscode.com) with the text 'Visit Amigoscode'"
+              "description:": "Use the <a> tag to add a link to the Amigoscode website (https://www.amigoscode.com) with the text 'Visit Amigoscode'."
             }
           ],
           "scripts": [
@@ -139,12 +151,12 @@
             {
               "test": "",
               "name": "Add a link to the Lists page",
-              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'"
+              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'."
             },
             {
               "test": "",
               "name": "Add a link to the Contact page",
-              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'"
+              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'."
             }
           ],
           "scripts": [
@@ -162,12 +174,12 @@
             {
               "test": "",
               "name": "Add a link to the Lists page",
-              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'"
+              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'."
             },
             {
               "test": "",
               "name": "Add a link to the Contact page",
-              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'"
+              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'."
             }
           ],
           "scripts": [
@@ -185,12 +197,12 @@
             {
               "test": "",
               "name": "Name the blank button",
-              "description:": "Add some text to the first button on the page so that it reads 'click me'"
+              "description:": "Add some text to the first button on the page so that it reads 'click me'."
             },
             {
               "test": "",
               "name": "Change the colour of the red button",
-              "description:": "Change the style attribute of the red button and make it a different colour"
+              "description:": "Change the style attribute of the red button and make it a different colour."
             }
           ],
           "scripts": [
@@ -208,12 +220,12 @@
             {
               "test": "",
               "name": "Add another row to the table",
-              "description:": "Add another entry to the table, defining an id, name and age"
+              "description:": "Add another entry to the table, defining an id, name and age."
             },
             {
               "test": "",
               "name": "Double the border width of the table",
-              "description:": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag"
+              "description:": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag."
             }
           ],
           "scripts": [
@@ -231,18 +243,41 @@
             {
               "test": "",
               "name": "Embed the man-working.jpg image in the webpage",
-              "description:": ""
+              "description:": "Use an image tag to embed the image stored in your website's local directory."
             },
             {
               "test": "",
               "name": "Adjust the size of the image",
-              "description:": "Use attributes to make the image 300 pixels wide and 200 pixels tall"
+              "description:": "Use attributes to make the image 300 pixels wide and 200 pixels tall."
             }
           ],
           "scripts": [
             {
               "language": "browser",
-              "file": "index.html"
+              "file": "images.html"
+            }
+          ]
+        },
+        {
+          "name": "Divs",
+          "dir": "divs",
+          "initialFiles": ["divs.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add a new section of content containing a paragraph of text",
+              "description:": "Use the <div> tag to create a new section on the webpage. Inside this section, add a paragraph of text using the <p> tag."
+            },
+            {
+              "test": "",
+              "name": "Add styling to the new section",
+              "description:": "Add attributes to the <div> tag to give it a background color of your choice and a border."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "div.html"
             }
           ]
         }
@@ -511,4 +546,3 @@
     }
   ]
 }
-
