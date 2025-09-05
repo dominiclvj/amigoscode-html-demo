@@ -1,8 +1,8 @@
-var firstName = "Bob";
-var age = 42;
+var firstName = "Jamila";
+var age = 21;
 var isCoder = true
-var decimal = 3.14
-var birthday = new Date(1990, 1, 1)
+var decimal = 100.32
+var birthday = new Date(2000, 1, 28)
 var person = {}
 var empty = undefined
 
