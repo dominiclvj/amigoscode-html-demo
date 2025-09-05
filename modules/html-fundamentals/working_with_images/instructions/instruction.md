@@ -7,7 +7,7 @@ code, pre {
 # Images
 
 ## Learning
-Images are one of the easiest ways to make a web page more interesting. In HTML, images are added with the <img> tag. This is one of the self-closing tags we encountered earlier.
+Images are one of the easiest ways to make a web page more interesting. In HTML, images are added with the ```<img>``` tag. This is one of the self-closing tags we encountered earlier.
 
 The most important part of an image tag is the src attribute. This tells the browser where to find the image file. If the image is stored on your computer inside the same folder as your HTML file, you can simply write the file name. For example:
 
