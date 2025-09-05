@@ -1,5 +1,4 @@
 {
-  "skippable": true,
   "languages": [
     {
       "language": "browser"
@@ -16,6 +15,7 @@
       "dir": "html-fundamentals",
       "exercises": [
         {
+          "skippable": true,
           "name": "HTML Introduction",
           "dir": "introduction",
           "initialFiles": ["index.html"],
@@ -267,6 +267,7 @@
       "dir": "js-fundamentals",
       "exercises": [
         {
+          "skippable": true,
           "name": "JavaScript Introduction",
           "dir": "javascript_introduction",
           "initialFiles": ["index.html"],
