@@ -1,4 +1,5 @@
 {
+  "skippable": true,
   "languages": [
     {
       "language": "browser"
@@ -15,7 +16,7 @@
       "exercises": [
         {
           "name": "HTML Introduction",
-          "dir": "html_introduction",
+          "dir": "introduction",
           "initialFiles": ["index.html"],
           "tests": [],
           "scripts": [
@@ -31,14 +32,14 @@
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "add title",
               "name": "Add <title> Tag Content",
-              "description:": "Add content to the <title> tag so that it reads 'Amigoscode'."
+              "description": "Add content to the <title> tag so that it reads 'Amigoscode'."
             },
             {
-              "test": "",
+              "test": "add header",
               "name": "Write your name inside a <h1> tag",
-              "description:": "Add your first heading in the body of the HTML file by writing your name between an open and closed h1 tag."
+              "description": "Add your first heading in the body of the HTML file by writing your name between an open and closed h1 tag."
             }
           ],
           "scripts": [
@@ -54,9 +55,9 @@
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "link",
               "name": "Add a link to the Amigoscode website",
-              "description:": "Use the <a> tag to add a link to the Amigoscode website (https://www.amigoscode.com) with the text 'Visit Amigoscode'."
+              "description": "Use the <a> tag to add a link to the Amigoscode website (https://www.amigoscode.com) with the text 'Visit Amigoscode'."
             }
           ],
           "scripts": [
@@ -72,9 +73,9 @@
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "input",
               "name": "Add an input tag to collect user name",
-              "description:": "Use the <input> tag to collect a user's name. The input field should have text that says 'Enter your name'."
+              "description": "Use the <input> tag to collect a user's name. The input field should have placeholder text that says 'Enter your name'."
             }
           ],
           "scripts": [
@@ -87,12 +88,12 @@
         {
           "name": "H1 to H6 Tags",
           "dir": "h1_to_h6_tags",
-          "initialFiles": ["main.html"],
+          "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "headings",
               "name": "Add three more headings using h4, h5, and h6 tags",
-              "description:": "Expand your website by adding three additional headings using the h4, h5, and h6 tags. Each heading should contain any text of your choice."
+              "description": "Expand your website by adding three additional headings using the h4, h5, and h6 tags. Each heading should contain any text of your choice."
             }
           ],
           "scripts": [
@@ -108,9 +109,9 @@
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "paragraphs",
               "name": "Add two paragraphs using the <p> tag",
-              "description:": "Add two paragraphs to your webpage under any of the existing headings. Each paragraph should contain any text of your choice."
+              "description": "Add two paragraphs to your webpage under any of the existing headings. Each paragraph should contain any text of your choice."
             }
           ],
           "scripts": [
@@ -128,35 +129,12 @@
             {
               "test": "",
               "name": "Write your to-do list",
-              "description:": "Use an unordered list to write three items on your to-do list for tomorrow."
+              "description": "Use an unordered list to write three items on your to-do list for tomorrow."
             },
             {
               "test": "",
               "name": "List your top three favorite movies",
-              "description:": "Use an ordered list to rank your top three favorite movies."
-            }
-          ],
-          "scripts": [
-            {
-              "language": "browser",
-              "file": "index.html"
-            }
-          ]
-        },
-        {
-          "name": "Links",
-          "dir": "links",
-          "initialFiles": ["index.html"],
-          "tests": [
-            {
-              "test": "",
-              "name": "Add a link to the Lists page",
-              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'."
-            },
-            {
-              "test": "",
-              "name": "Add a link to the Contact page",
-              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'."
+              "description": "Use an ordered list to rank your top three favorite movies."
             }
           ],
           "scripts": [
@@ -172,14 +150,14 @@
           "initialFiles": ["index.html", "lists.html", "pages/contact.html"],
           "tests": [
             {
-              "test": "",
+              "test": "list link",
               "name": "Add a link to the Lists page",
-              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'."
+              "description": "Use a relative path to create a link to the Lists page with the text 'Lists'."
             },
             {
-              "test": "",
+              "test": "contact link",
               "name": "Add a link to the Contact page",
-              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'."
+              "description": "Use a relative path to create a link to the Contact page with the text 'Newsletter'."
             }
           ],
           "scripts": [
@@ -197,12 +175,12 @@
             {
               "test": "",
               "name": "Name the blank button",
-              "description:": "Add some text to the first button on the page so that it reads 'click me'."
+              "description": "Add some text to the first button on the page so that it reads 'click me'."
             },
             {
               "test": "",
               "name": "Change the colour of the red button",
-              "description:": "Change the style attribute of the red button and make it a different colour."
+              "description": "Change the style attribute of the red button and make it a different colour."
             }
           ],
           "scripts": [
@@ -214,18 +192,18 @@
         },
         {
           "name": "Tables",
-          "dir": "table",
+          "dir": "tables",
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "add row",
               "name": "Add another row to the table",
-              "description:": "Add another entry to the table, defining an id, name and age."
+              "description": "Add another entry to the table, defining an id, name and age."
             },
             {
-              "test": "",
+              "test": "double border",
               "name": "Double the border width of the table",
-              "description:": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag."
+              "description": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag."
             }
           ],
           "scripts": [
@@ -241,14 +219,14 @@
           "initialFiles": ["images.html"],
           "tests": [
             {
-              "test": "",
+              "test": "embed",
               "name": "Embed the man-working.jpg image in the webpage",
-              "description:": "Use an image tag to embed the image stored in your website's local directory."
+              "description": "Use an image tag to embed the image stored in your website's local directory."
             },
             {
-              "test": "",
+              "test": "adjust",
               "name": "Adjust the size of the image",
-              "description:": "Use attributes to make the image 300 pixels wide and 200 pixels tall."
+              "description": "Use attributes to make the image 300 pixels wide and 200 pixels tall."
             }
           ],
           "scripts": [
@@ -264,20 +242,20 @@
           "initialFiles": ["divs.html"],
           "tests": [
             {
-              "test": "",
+              "test": "div with p",
               "name": "Add a new section of content containing a paragraph of text",
-              "description:": "Use the <div> tag to create a new section on the webpage. Inside this section, add a paragraph of text using the <p> tag."
+              "description": "Use the <div> tag to create a new section on the webpage. Inside this section, add a paragraph of text using the <p> tag."
             },
             {
-              "test": "",
+              "test": "add style",
               "name": "Add styling to the new section",
-              "description:": "Add attributes to the <div> tag to give it a background color of your choice and a border."
+              "description": "Add attributes to the <div> tag to give it a background color of your choice and a border."
             }
           ],
           "scripts": [
             {
               "language": "browser",
-              "file": "div.html"
+              "file": "divs.html"
             }
           ]
         }
