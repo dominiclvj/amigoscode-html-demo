@@ -2,6 +2,10 @@
   "languages": [
     {
       "language": "browser"
+    },
+    {
+      "language": "node",
+      "version": "22"
     }
   ],
   "modules": [
@@ -67,7 +71,7 @@
               "file": "index.html"
             }
           ]
-        },        
+        },
         {
           "name": "H1 to H6 Tags",
           "dir": "h1_to_h6_tags",
@@ -118,7 +122,7 @@
               "test": "",
               "name": "List your top three favorite movies",
               "description:": "Use an ordered list to rank your top three favorite movies."
-            }            
+            }
           ],
           "scripts": [
             {
@@ -141,7 +145,7 @@
               "test": "",
               "name": "Add a link to the Contact page",
               "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'"
-            }            
+            }
           ],
           "scripts": [
             {
@@ -164,7 +168,7 @@
               "test": "",
               "name": "Add a link to the Contact page",
               "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'"
-            }            
+            }
           ],
           "scripts": [
             {
@@ -187,7 +191,7 @@
               "test": "",
               "name": "Change the colour of the red button",
               "description:": "Change the style attribute of the red button and make it a different colour"
-            }            
+            }
           ],
           "scripts": [
             {
@@ -209,8 +213,8 @@
             {
               "test": "",
               "name": "Double the border width of the table",
-              "description:": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag"   
-            }            
+              "description:": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag"
+            }
           ],
           "scripts": [
             {
@@ -232,8 +236,8 @@
             {
               "test": "",
               "name": "Adjust the size of the image",
-              "description:": "Use attributes to make the image 300 pixels wide and 200 pixels tall"   
-            }            
+              "description:": "Use attributes to make the image 300 pixels wide and 200 pixels tall"
+            }
           ],
           "scripts": [
             {
@@ -243,6 +247,268 @@
           ]
         }
       ]
+    },
+    {
+      "name": "JS Fundamentals",
+      "dir": "js-fundamentals",
+      "exercises": [
+        {
+          "name": "comments",
+          "dir": "comments",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "comments.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["comments.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "added a comment",
+              "name": "Add a comment",
+              "description": "Add a comment to the file."
+            },
+            {
+              "test": "added a multiline comment",
+              "name": "Add a multiline comment",
+              "description": "Add a multiline comment to the file."
+            }
+          ]
+        },
+        {
+          "name": "quotes",
+          "dir": "quotes",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "quotes.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["quotes.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "try both quotes",
+              "name": "Try Both Quotes",
+              "description": "Add an extra console.log that uses '' as well as the existing one."
+            },
+            {
+              "test": "use a semicolon",
+              "name": "Add a Semicolon ",
+              "description": "Add a semicolon to the end of a line."
+            }
+          ]
+        },
+        {
+          "name": "variables",
+          "dir": "variables",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "variables.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["variables.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "print string",
+              "name": "Print a string variable",
+              "description": "Print a string variable you've created to the console."
+            },
+            {
+              "test": "print integer",
+              "name": "Print an integer variable",
+              "description": "Print an integer variable to the console."
+            },
+            {
+              "test": "print boolean",
+              "name": "Print a boolean variable",
+              "description": "Print a boolean variable to the console."
+            },
+            {
+              "test": "print float",
+              "name": "Print a decimal variable",
+              "description": "Print a decimal variable to the console."
+            },
+            {
+              "test": "print date",
+              "name": "Print a date",
+              "description": "Print a date variable to the console."
+            },
+            {
+              "test": "print object",
+              "name": "Print an object variable",
+              "description": "Print an object variable to the console."
+            },
+            {
+              "test": "print undefined",
+              "name": "Print an undefined variable",
+              "description": "Print an undefined variable to the console."
+            }
+          ]
+        },
+        {
+          "name": "datatypes",
+          "dir": "datatypes",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "datatypes.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["datatypes.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "print types",
+              "name": "Print datatypes",
+              "description": "Print out the type of the variables as in the example video."
+            }
+          ]
+        },
+        {
+          "name": "strings",
+          "dir": "strings",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "strings.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["strings.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "print the length of a string",
+              "name": "Print the length of a string",
+              "description": "Print the length of a string variable."
+            },
+            {
+              "test": "print the uppercase string",
+              "name": "Print the uppercased string",
+              "description": "Convert the string to uppercase using a method on the string type and print it out."
+            },
+            {
+              "test": "print concat string",
+              "name": "Print two strings concatenated together",
+              "description": "Concatenate two strings together in a console.log."
+            },
+            {
+              "test": "print interpolated string",
+              "name": "Print an interpolated string",
+              "description": "Print a new string created by interpolating two variables."
+            }
+          ]
+        },
+        {
+          "name": "objects",
+          "dir": "objects",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "objects.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["objects.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "create an object",
+              "name": "Create an object",
+              "description": "Create an object with a string, integer, boolean, decimal, date and object property."
+            },
+            {
+              "test": "print an object property",
+              "name": "Print a property",
+              "description": "Print a property of your object."
+            },
+            {
+              "test": "print the object values",
+              "name": "Print the object values",
+              "description": "Use Object.values to print the values in your object as an array."
+            }
+          ]
+        },
+        {
+          "name": "boolean",
+          "dir": "boolean",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "boolean.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["boolean.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "write an if statement",
+              "name": "Write an if statement",
+              "description": "Create a boolean variable, and then an if block that checks that boolean."
+            },
+            {
+              "test": "print the inverse",
+              "name": "Invert the boolean",
+              "description": "Print the inverted value of your boolean."
+            }
+          ]
+        },
+        {
+          "name": "arrays",
+          "dir": "arrays",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "arrays.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["arrays.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "print an array",
+              "name": "Print an array",
+              "description": "Create an array variable and print it to the console."
+            },
+            {
+              "test": "print an item",
+              "name": "Print an array item",
+              "description": "Print an item from the array."
+            }
+          ]
+        },
+        {
+          "name": "functions",
+          "dir": "functions",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "functions.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["functions.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "add function",
+              "name": "Write an add function",
+              "description": "Write a function that takes two number parameters, and returns the sum of those numbers."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
+
