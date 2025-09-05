@@ -6,14 +6,25 @@
   ],
   "modules": [
     {
-      "name": "Sandbox",
-      "dir": "sandbox",
+      "name": "HTML Fundamentals",
+      "dir": "html-fundamentals",
       "exercises": [
         {
-          "name": "Sandbox",
-          "dir": "sandbox",
-          "initialFiles": ["index.html", "index.js"],
-          "tests": [],
+          "name": "What Are Tags?",
+          "dir": "what_are_tags",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add <title> Tag Content",
+              "description:": "Add content to the <title> tag so that it reads 'Amigoscode'"
+            },
+            {
+              "test": "",
+              "name": "Write your name inside a <h1> tag",
+              "description:": "Add your first heading in the body of the HTML file by writing your name between an open and closed h1 tag"
+            }
+          ],
           "scripts": [
             {
               "language": "browser",
@@ -22,10 +33,185 @@
           ]
         },
         {
-          "name": "Sandbox 2",
-          "dir": "sandbox_2",
-          "initialFiles": ["index.html", "index.js"],
-          "tests": [],
+          "name": "Attributes 1",
+          "dir": "attributes_1",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add a link to the Amigoscode website",
+              "description:": "Use the <a> tag to add a link to the Amigoscode website (https://www.amigoscode.com) with the text 'Visit Amigoscode'"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Attributes 2",
+          "dir": "attributes_2",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add an input tag to collect user name",
+              "description:": "Use the <input> tag to collect a user's name. The input field should have text that says 'Enter your name'."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },        
+        {
+          "name": "H1 to H6 Tags",
+          "dir": "h1_to_h6_tags",
+          "initialFiles": ["main.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add three more headings using h4, h5, and h6 tags",
+              "description:": "Expand your website by adding three additional headings using the h4, h5, and h6 tags. Each heading should contain any text of your choice."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Paragraphs",
+          "dir": "paragraphs",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add two paragraphs using the <p> tag",
+              "description:": "Add two paragraphs to your webpage under any of the existing headings. Each paragraph should contain any text of your choice."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Lists",
+          "dir": "lists",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Write your to-do list",
+              "description:": "Use an unordered list to write three items on your to-do list for tomorrow."
+            },
+            {
+              "test": "",
+              "name": "List your top three favorite movies",
+              "description:": "Use an ordered list to rank your top three favorite movies."
+            }            
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "dir": "links",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add a link to the Lists page",
+              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'"
+            },
+            {
+              "test": "",
+              "name": "Add a link to the Contact page",
+              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'"
+            }            
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "dir": "links",
+          "initialFiles": ["index.html", "lists.html", "pages/contact.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Add a link to the Lists page",
+              "description:": "Use a relative path to create a link to the Lists page with the text 'Lists'"
+            },
+            {
+              "test": "",
+              "name": "Add a link to the Contact page",
+              "description:": "Use a relative path to create a link to the Contact page with the text 'Newsletter'"
+            }            
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Buttons",
+          "dir": "buttons",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Name the blank button",
+              "description:": "Add some text to the first button on the page so that it reads 'click me'"
+            },
+            {
+              "test": "",
+              "name": "Change the colour of the red button",
+              "description:": "Change the style attribute of the red button and make it a different colour"
+            }            
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Tables",
+          "dir": "table",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "",
+              "description:": ""
+            },
+            {
+              "test": "",
+              "name": "",
+              "description:": ""
+            }            
+          ],
           "scripts": [
             {
               "language": "browser",
@@ -37,4 +223,3 @@
     }
   ]
 }
-

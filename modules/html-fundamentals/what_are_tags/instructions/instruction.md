@@ -22,3 +22,5 @@ For example:
 <p>This is a paragraph</p>
 <img>This should contain a URL for embedding images</img>
 ```
+
+Let's edit the open HTML file and make some simple edits using existing tags and some new ones that we'll create.
