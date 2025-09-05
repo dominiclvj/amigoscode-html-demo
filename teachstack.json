@@ -17,7 +17,7 @@
         {
           "skippable": true,
           "name": "HTML Introduction",
-          "dir": "html_introduction",
+          "dir": "introduction",
           "initialFiles": ["index.html"],
           "tests": [],
           "scripts": [
