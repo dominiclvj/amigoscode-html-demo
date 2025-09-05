@@ -53,6 +53,22 @@ So far we've created a very basic looking table. By default in HTML, tables won'
 
 If we create a style block ```<style>``` in the header (```<head>```), this will apply consistent styling to every table that we create on the page.
 
-In the example below, you can see that we've first created style tag that applies to tables, and specifically the tags ```<th>``` and ```<td>``` which define the table heading and table data cells respectively. We've then said that the borders of these elements should be 1 pixel in width, solid and blue.
+In the example below, you can see that we've first created a style element that applies to tables, and specifically the tags ```<th>``` and ```<td>``` which define the table heading and table data cells respectively. We've then said that the borders of these elements should be 1 pixel in width, solid and blue.
 
-The second 
+The second element makes the table width expand to take up the full width of the available browser. The percentage could be adjusted to make it take up a third (33%) or a half (50%) of the page width, depending on your preference.
+
+```html
+<head>
+  <title>Tables</title>
+  <style>
+    table, th, td {
+      border: 1px solid blue;
+    }
+    table {
+      width: 100%;
+    }
+  </style>
+</head>
+```
+
+Let's make some additions and modifications to our existing table using what we've learned.

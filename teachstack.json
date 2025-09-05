@@ -203,13 +203,36 @@
           "tests": [
             {
               "test": "",
-              "name": "",
+              "name": "Add another row to the table",
+              "description:": "Add another entry to the table, defining an id, name and age"
+            },
+            {
+              "test": "",
+              "name": "Double the border width of the table",
+              "description:": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag"   
+            }            
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Working with Images",
+          "dir": "working_with_images",
+          "initialFiles": ["images.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Embed the man-working.jpg image in the webpage",
               "description:": ""
             },
             {
               "test": "",
-              "name": "",
-              "description:": ""
+              "name": "Adjust the size of the image",
+              "description:": "Use attributes to make the image 300 pixels wide and 200 pixels tall"   
             }            
           ],
           "scripts": [
