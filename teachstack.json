@@ -133,12 +133,12 @@
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "unordered list",
               "name": "Write your to-do list",
               "description": "Use an unordered list to write three items on your to-do list for tomorrow."
             },
             {
-              "test": "",
+              "test": "ordered list",
               "name": "List your top three favorite movies",
               "description": "Use an ordered list to rank your top three favorite movies."
             }
@@ -153,7 +153,7 @@
         {
           "name": "Links",
           "dir": "links",
-          "initialFiles": ["index.html", "lists.html", "pages/contact.html"],
+          "initialFiles": ["lists.html", "pages/contact.html", "index.html"],
           "tests": [
             {
               "test": "list link",
@@ -179,12 +179,12 @@
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "",
+              "test": "button text",
               "name": "Name the blank button",
               "description": "Add some text to the first button on the page so that it reads 'click me'."
             },
             {
-              "test": "",
+              "test": "button colour",
               "name": "Change the colour of the red button",
               "description": "Change the style attribute of the red button and make it a different colour."
             }
