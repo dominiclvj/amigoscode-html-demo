@@ -37,8 +37,17 @@ describe("comments", () => {
 
     expect(image).not.toBeNull();
 
-    const width = image.getAttribute("width");
-    const height = image.getAttribute("height");
+    const computed = global.dom.window.getComputedStyle(image);
+
+    let width = computed.getPropertyValue("width");
+    let height = computed.getPropertyValue("height");
+
+    if (!width) {
+      width = image.getAttribute("width");
+    }
+    if (!height) {
+      height = image.getAttribute("height");
+    }
 
     expect(width).toBe("300px");
     expect(height).toBe("200px");
