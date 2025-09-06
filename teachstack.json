@@ -110,6 +110,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "Paragraphs",
           "dir": "paragraphs",
           "initialFiles": ["index.html"],
@@ -128,6 +129,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "Lists",
           "dir": "lists",
           "initialFiles": ["index.html"],
@@ -151,6 +153,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "Links",
           "dir": "links",
           "initialFiles": ["index.html", "lists.html", "pages/contact.html"],
@@ -174,6 +177,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "Buttons",
           "dir": "buttons",
           "initialFiles": ["index.html"],
@@ -197,6 +201,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "Tables",
           "dir": "tables",
           "initialFiles": ["index.html"],
@@ -220,6 +225,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "Working with Images",
           "dir": "working_with_images",
           "initialFiles": ["images.html"],
@@ -243,6 +249,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "Divs",
           "dir": "divs",
           "initialFiles": ["divs.html"],
@@ -391,6 +398,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "datatypes",
           "dir": "datatypes",
           "scripts": [
@@ -411,6 +419,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "strings",
           "dir": "strings",
           "scripts": [
@@ -441,6 +450,7 @@
           ]
         },
         {
+          "skippable": true,
           "name": "objects",
           "dir": "objects",
           "scripts": [
