@@ -39,7 +39,7 @@
           "tests": [
             {
               "test": "add title",
-              "name": "Add <title> Tag Content",
+              "name": "Add <title> tag content",
               "description": "Add content to the <title> tag so that it reads 'Amigoscode'."
             },
             {
