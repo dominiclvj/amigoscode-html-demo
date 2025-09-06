@@ -12,10 +12,10 @@ Headings are one of the most important elements in HTML. They define the structu
 - ```<h2>``` through ```<h6>``` are subheadings — they organise content into sections and subsections, like an outline.
 
 Headings are important for many reasons:
-1. Readability: Visitors can quickly scan a page to find what they want.
-2. Accessibility: Screen readers use headings to help visually impaired users navigate.
-3. SEO: Search engines give more weight to headings when deciding what your page is about.
-4. Structure: Headings create a logical hierarchy that keeps your HTML tidy.
+- **Readability** - Visitors can quickly scan a page to find what they want.
+- **Accessibility** - Screen readers use headings to help visually impaired users navigate.
+- **SEO** - Search engines give more weight to headings when deciding what your page is about.
+- **Structure** - Headings create a logical hierarchy that keeps your HTML tidy.
 
 For example:
 ```html
@@ -31,9 +31,6 @@ For example:
 
 <h3>Morning Routine Tip</h3>
 <p>Even a 30-second blast of cold water can help you wake up faster.</p>
-
-<h2>Strengthens Immunity</h2>
-<p>Regular cold exposure is associated with improved immune response.</p>
 ```
 
 Let's experiment with adding some subheadings to our website.
