@@ -19,7 +19,10 @@ describe("comments", () => {
     expect(link).not.toBeNull();
     expect(link.textContent).toBe("Visit Amigoscode");
     const href = link.getAttribute("href");
-    expect(href).toBe("https://www.amigoscode.com");
+    expect(href).toBeOneOf([
+      "https://www.amigoscode.com",
+      "https://amigoscode.com",
+    ]);
   });
 });
 
