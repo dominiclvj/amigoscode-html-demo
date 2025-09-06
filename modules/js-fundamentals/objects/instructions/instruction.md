@@ -15,11 +15,13 @@ An object is a collection of key–value pairs. Each key (also called a property
 var student = {
   name: "Jamila",
   age: 21
+  isCoder: true
 };
 ```
 Just as we can call functions from the console object, we can access properties from the student object using dot notation.
 ```js
-console.log(student.name);  // prints "Jamila"
-console.log(student.age);   // prints 21
+console.log(student.name);    // prints "Jamila"
+console.log(student.age);     // prints 21
+console.log(student.isCoder); // prints True
 ```
-Now it's your turn to combine the variables we defined earlier into a single object.
+Now it's your turn to create your first object with JavaScript.
