@@ -13,6 +13,6 @@ Think of a ```<div>``` like a cardboard box. You can place different items insid
 
 By default, a ```<div>``` doesn’t change how content looks. It’s an invisible wrapper. But when you combine it with CSS, it becomes very useful. You can give it a background colour, a border, padding, margins, or even position it on the page. Designers often use these elements to break up a page into sections such as a header, a sidebar, or a footer.
 
-In the accompanying example, we have applied a background colour applied, so you can clearly see the two paragraphs it contains. The second ```<div>``` has a border, so it looks like a box around the content.
+In the accompanying example, we have applied a background colour so you can clearly see the two paragraphs it contains. The second ```<div>``` has a border, so it looks like a box around the content.
 
 Let's add another section using these tags and add some formatting.
