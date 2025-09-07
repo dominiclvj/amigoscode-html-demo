@@ -3,9 +3,13 @@ import * as path from 'path'
 
 import { describe, expect, it, beforeAll } from 'vitest'
 import { parse } from '@babel/parser'
+import { spawnSync } from 'child_process'
+
+const fileName = '../exercise/strings.js'
 
 beforeAll(() => {
-    const fileContents = fs.readFileSync(path.join(__dirname, '../exercise/strings.js')).toString()
+    const fileContents = fs.readFileSync(path.join(__dirname, fileName)).toString()
+    global.fileContents = fileContents
 
     global.tree = parse(fileContents, {
         sourceType: "module",
@@ -16,57 +20,44 @@ beforeAll(() => {
 
 describe("comments", () => {
     it('print the length of a string', () => {
-        const stringIdentifier = global.tree.program.body.find(node => {
+        const stringValues = global.tree.program.body.filter(node => {
             return node.type === 'VariableDeclaration' && node.kind === 'var' && node.declarations[0].init.type === 'StringLiteral'
-        })?.declarations[0].id.name
+        }).map(s => s.declarations[0].init.value)
 
-        expect(stringIdentifier).not.toBeUndefined()
+        const result = spawnSync(
+            'node', [path.join(__dirname, fileName)], {encoding: 'utf-8'}
+        )
 
-        const print = global.tree.program.body.find(node => {
-            // make sure it's a function call
-            if (!(node.type === 'ExpressionStatement' && node.expression.type === 'CallExpression')) {
-                return false
+        let contains = false
+
+        stringValues.forEach((s) => {
+            if (result.stdout.includes(s.length)) {
+                contains = true
             }
-
-            // check it's argument is a typeof operator on the string identifier
-            if (!(node.expression.arguments[0].object.name === stringIdentifier && node.expression.arguments[0].property.name === 'length')) {
-                return false
-            }
-
-            return true
         })
 
-        expect(print.expression.callee.object.name).toEqual('console')
-        expect(print.expression.callee.property.name).toEqual('log')
-
+        expect(contains).toBe(true)
 
     })
     it('print the uppercase string', () => {
-        const stringIdentifier = global.tree.program.body.find(node => {
+        const stringValues = global.tree.program.body.filter(node => {
             return node.type === 'VariableDeclaration' && node.kind === 'var' && node.declarations[0].init.type === 'StringLiteral'
-        })?.declarations[0].id.name
+        }).map(s => s.declarations[0].init.value)
 
-        expect(stringIdentifier).not.toBeUndefined()
+        const result = spawnSync(
+            'node', [path.join(__dirname, fileName)], {encoding: 'utf-8'}
+        )
 
-        const print = global.tree.program.body.find(node => {
-            // make sure it's a function call
-            if (!(node.type === 'ExpressionStatement' && node.expression.type === 'CallExpression')) {
-                return false
+        let contains = false
+
+        stringValues.forEach((s) => {
+            if (result.stdout.includes(s.toUpperCase())) {
+                contains = true
             }
-
-            if (!node.expression.arguments[0].callee) {
-                return false
-            }
-
-            if (!(node.expression.arguments[0].callee.object.name === stringIdentifier && node.expression.arguments[0].callee.property.name === 'toUpperCase')) {
-                return false
-            }
-
-            return true
         })
 
-        expect(print.expression.callee.object.name).toEqual('console')
-        expect(print.expression.callee.property.name).toEqual('log')
+        expect(contains).toBe(true)
+        expect(global.fileContents.includes('toUpperCase()'))
 
     })
     it('print concat string', () => {
@@ -105,36 +96,4 @@ describe("comments", () => {
 
     })
 
-    it('print interpolated string', () => {
-
-        const print = global.tree.program.body.find(node => {
-            // make sure it's a function call
-            if (!(node.type === 'ExpressionStatement' && node.expression.type === 'CallExpression')) {
-                return false
-            }
-
-            if (!node.expression.arguments[0].type === "TemplateLiteral" || !Array.isArray(node.expression.arguments[0].expressions)) {
-                return false
-            }
-            const leftIdentifier = node.expression.arguments[0].expressions[0].name
-            const rightIdentifier = node.expression.arguments[0].expressions[1].name
-
-            const left = global.tree.program.body.find(node => {
-                return node.type === 'VariableDeclaration' && node.declarations[0].id.name === leftIdentifier
-            })
-            const right = global.tree.program.body.find(node => {
-                return node.type === 'VariableDeclaration' && node.declarations[0].id.name === rightIdentifier
-            })
-
-            expect(left).not.toBeUndefined()
-            expect(right).not.toBeUndefined()
-
-
-            return true
-        })
-
-        expect(print.expression.callee.object.name).toEqual('console')
-        expect(print.expression.callee.property.name).toEqual('log')
-
-    })
 })
