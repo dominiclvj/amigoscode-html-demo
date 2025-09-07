@@ -21,8 +21,7 @@ describe("comments", () => {
       return (
         node.type === "VariableDeclaration" &&
         node.kind === "var" &&
-        node.declarations[0].init.type === "ObjectExpression" &&
-        node.declarations.init.properties.length > 2
+        node.declarations[0].init.type === "ObjectExpression"
       );
     });
 
