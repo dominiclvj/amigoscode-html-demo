@@ -444,8 +444,8 @@
             },
             {
               "test": "print concat string",
-              "name": "Print concatenated strings",
-              "description": "Concatinate two strings with the '+' operator and print the result."
+              "name": "Print a concatenated string",
+              "description": "Concatenate two strings with the '+' operator and print the result."
             }
           ]
         },
